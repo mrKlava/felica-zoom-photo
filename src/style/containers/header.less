@@ -1,1 +1,46 @@
 //out: ../../containers/header/header.css, compress: true
+
+@import '../variables.less';
+
+.header {
+    height: 100vh;
+    background: url('../../assets/images/intro/pexels-daria-obymaha-1683989.jpg')center, no-repeat;
+    background-size: cover;
+
+    position: relative;
+
+    &-content {
+        position: absolute;
+        bottom: 4rem;
+        left: 4rem;
+
+        width: 100%;
+        max-width: 600px;
+
+        text-align: justify;
+
+        &_suptitle {
+            font-family: @font-suptitle;
+            font-size: @title-md;
+            font-weight: 400;
+            text-align: center;
+
+            transform: rotate(-7deg);
+        }
+
+        &_title {
+            // font-family: @font-title;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: @title-lg;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        &_text {
+            font-family: @font-text;
+            font-size: @text-lg;
+            line-height: 1.2em;
+            
+        }
+    }
+}

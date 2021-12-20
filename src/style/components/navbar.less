@@ -1,1 +1,54 @@
 //out: ../../components/navbar/navbar.css, compress: true
+
+@import '../variables.less';
+
+.navbar {
+    background-color: @dark-green;
+    height: 50px;
+
+
+    &-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+
+        &_logo {
+            font-family: @font-fancy;
+            font-size: 32px;
+
+            img {
+                display: none;
+            }
+        }
+
+        &_container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            a {
+                text-transform: capitalize;
+                text-decoration: none;
+
+                font-family: @font-fancy;
+                color: @gold;
+                font-size: @text-large;
+                // font-weight: 700;
+
+                margin-left: 2rem;
+
+                &:hover {
+                    color: lighten(@gold, 20%);
+                }
+
+                transition: color .2s linear;
+
+            }
+
+            
+        }
+
+    }
+}

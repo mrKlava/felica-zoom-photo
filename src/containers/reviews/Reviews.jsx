@@ -4,7 +4,7 @@ import './reviews.css'
 
 function Reviews() {
     return (
-        <div>
+        <div className='reviews' id='reviews'>
             Reviews
         </div>
     )
