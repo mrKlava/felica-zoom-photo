@@ -1,1 +1,97 @@
-//out: ../../components/service/service.css, compress: true
+//out: ../../components/service/service.css, compress: false
+
+@import '../variables.less';
+
+.service {
+    width: 50%;
+
+    &-content {
+
+        background-color: @dark-green;
+        margin: 2rem;
+        box-shadow: 0 0 20px #404a42;
+
+
+        &_img {
+            position: relative;
+
+            
+            &-div {
+
+                width: 100%;
+
+                img {
+                    display: block;
+                    max-width: 100%;
+
+                    transform: translate3d(25px, -25px, 0);
+                }
+            }
+
+            &-title {
+                font-size: 52px;
+                font-weight: 700;
+                color: #c0b283;
+
+                text-shadow: 0 -7px 30px #192231;
+
+                position: absolute;
+
+                bottom: 0;
+                left: 0;
+
+                transform: translate3d(0, 0, 0);
+            }
+            
+        }
+
+        &_info {
+            
+            &-text {
+                padding: 1rem 2rem;
+                font-family: @font-text;
+                color: @marble;
+                font-size: @text-md;
+                line-height: 1.5rem;
+
+                text-align: center;
+
+                &.short {
+
+                }
+
+                &.long {
+                    display: none;
+                    padding-bottom: 2rem;
+
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+
+            &-more {
+                margin: 0 auto;
+                font-size: 0;
+
+                width: 15px;
+                height: 15px;
+
+                border-bottom: 2px solid #c0b283;
+                border-left: 2px solid #c0b283;
+
+                transform: rotate(135deg);
+
+                transition: transform linear .2s;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &.active {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}

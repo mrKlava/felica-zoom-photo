@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Mr Dafoe';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/mrdafoe/v9/lJwE-pIzkS5NXuMMrGiq.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Scheherazade New';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/scheherazadenew/v8/4UaZrFhTvxVnHDvUkUiHg8jprP4DCwM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Scheherazade New';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/scheherazadenew/v8/4UaerFhTvxVnHDvUkUiHg8jprP4DM79DHlY.ttf) format('truetype');
+}
+.service {
+  width: 50%;
+}
+.service-content {
+  background-color: #404a42;
+  margin: 2rem;
+  box-shadow: 0 0 20px #404a42;
+}
+.service-content_img {
+  position: relative;
+}
+.service-content_img-div {
+  width: 100%;
+}
+.service-content_img-div img {
+  display: block;
+  max-width: 100%;
+  transform: translate3d(25px, -25px, 0);
+}
+.service-content_img-title {
+  font-size: 52px;
+  font-weight: 700;
+  color: #c0b283;
+  text-shadow: 0 -7px 30px #192231;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.service-content_info-text {
+  padding: 1rem 2rem;
+  font-family: 'Scheherazade New', serif;
+  color: #f4f4f4;
+  font-size: 18px;
+  line-height: 1.5rem;
+  text-align: center;
+}
+.service-content_info-text.long {
+  display: none;
+  padding-bottom: 2rem;
+}
+.service-content_info-text.long.active {
+  display: block;
+}
+.service-content_info-more {
+  margin: 0 auto;
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  border-bottom: 2px solid #c0b283;
+  border-left: 2px solid #c0b283;
+  transform: rotate(135deg);
+  transition: transform linear 0.2s;
+}
+.service-content_info-more:hover {
+  cursor: pointer;
+}
+.service-content_info-more.active {
+  transform: rotate(-45deg);
+}

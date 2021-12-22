@@ -1,6 +1,6 @@
 import React from 'react'
 
-import about from '../../assets/images/about/about.jpg'
+import aboutImg from '../../assets/images/about/about.jpg'
 import { Title } from '../../UI'
 
 import './about.css'
@@ -11,7 +11,7 @@ function About() {
             <div className="about-container">
                 <div className="about-container_item">
                     <div className="about-container_item-img">
-                        <img src={about} alt="" />
+                        <img src={aboutImg} alt="" />
                     </div>
                 </div>
                 <div className="about-container_item">
