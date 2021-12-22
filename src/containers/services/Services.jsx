@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Title } from '../../UI'
+import { LargeTitle } from '../../UI'
 import { Service } from '../../components'
 
 import './services.css'
@@ -10,7 +10,7 @@ function Services() {
         <div className='services' id='services'>
             <div className="container">
                 <div className="services-content">
-                    <Title/>
+                    <LargeTitle/>
                     <div className="services-content_text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio excepturi molestiae et ab sit ipsam in quidem quos!
                     </div>

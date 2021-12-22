@@ -1,1 +1,46 @@
 //out: ../../containers/footer/footer.css, compress: true
+
+@import '../variables.less';
+
+.contacts {
+    background-color: @dark-blue;
+    
+    &-content {
+        display: flex;
+        padding: 4rem;
+
+        align-items: center;
+
+        &_img {
+            width: 300px;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        &_info {
+            margin: 0 4rem;
+            width: 100%;
+
+            color: @marble;
+            text-align: center;
+
+            &-text {
+                font-family: @font-text;
+                font-size: @text-md;
+                line-height: 1.5rem;
+
+                margin-bottom: 1rem;
+            }
+
+            &-email {
+                font-family: @font-title;
+                font-size: @text-lg;
+
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
