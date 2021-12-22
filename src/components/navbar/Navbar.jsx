@@ -8,8 +8,10 @@ function Navbar() {
             <div className="container">
                 <div className="navbar-links">
                     <div className="navbar-links_logo">
-                        {/* <img src="" alt="" /> */}
-                        Felica Zoom
+                        <a href="#header">
+                            {/* <img src="" alt="" /> */}
+                            Felica Zoom
+                        </a>
                     </div>
                     <div className="navbar-links_container">
                         <a href="#about">about</a>

@@ -1,1 +1,47 @@
-//out: ../../containers/about/
+//out: ../../containers/about/about.css, compress:true
+
+@import '../variables.less';
+
+.about {
+
+    &-container {
+        display: flex;
+        flex-direction: row;
+
+        &_item {
+            width: 50%;
+
+            &-img{
+                display: flex;
+
+                height: 100%;
+
+                img {
+                    display: block;
+                    min-width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                 }
+            }
+
+            &-content {
+                transform: translateY(-4rem);
+                height: 100%;
+                padding-bottom: 2rem;
+
+                background-color: @dark-blue;
+
+                &-text {
+                    padding: 0 3rem;
+                    font-family: @font-text;
+                    line-height: 1.5rem;
+                    font-size: @text-md;
+                    color: @marble;
+
+                    text-align: justify;
+
+                }
+            }
+        }
+    }
+}
