@@ -1,11 +1,15 @@
 import React from 'react'
 
+
+import { Review } from '../../components'
 import './reviews.css'
 
 function Reviews() {
     return (
         <div className='reviews' id='reviews'>
-            Reviews
+            <div className="container">
+                <Review/>
+            </div>
         </div>
     )
 }
