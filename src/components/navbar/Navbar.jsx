@@ -1,23 +1,29 @@
 import React from 'react'
 
+import { Link } from '../../UI'
+
 import './navbar.css'
 
-function Navbar() {
+function Navbar(props) {
+    const obj = props.data.links
     return (
         <div className='navbar'>
             <div className="container">
                 <div className="navbar-links">
                     <div className="navbar-links_logo">
-                        <a href="#header">
+                        <a href={ props.data.link } >
                             {/* <img src="" alt="" /> */}
-                            Felica Zoom
+                            { props.data.logo }
                         </a>
                     </div>
                     <div className="navbar-links_container">
-                        <a href="#about">about</a>
-                        <a href="#services">services</a>
-                        <a href="#reviews">reviews</a>
-                        <a href="#contacts">contacts</a>
+
+                        {
+                            obj.map(function(link) {
+                                return <Link item={link} key={link.id} />
+                            })
+                        }
+
                     </div>
                 </div>
             </div>

@@ -1,28 +1,28 @@
 import React from 'react'
 
 import { Title } from '../../UI'
-import contactImg from '../../assets/images/pexels-wilson-vitorino-2191611.jpg'
 
 import './footer.css'
 
-function Footer() {
+function Footer(props) {
+
     return (
         <div className='contacts' id='contacts'>
             <div className="container">
                 <div className="contacts-content">
                     <div className="contacts-content_img">
-                        <img src={contactImg} alt="" />
+                        <img src={ props.data.image } alt="" />
                     </div>
                     <div className="contacts-content_info">
-                        <Title/>
+                        <Title item={ props.data }/>
                         <div className="contacts-content_info-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatibus molestiae voluptas neque eaque repudiandae dolorum, fuga tenetur vitae rerum corrupti provident aperiam maiores quae! Omnis repudiandae nostrum voluptate at.
+                            { props.data.text }
                         </div>
                         <div className="contacts-content_info-email">
-                            felicaphotography@photos.com
+                            { props.data.email }
                         </div>
                         <div className="contacts-content_info-social">
-                            INSTAGRAM LOGO
+                            { props.data.instagram }
                         </div>
                     </div>
                 </div>

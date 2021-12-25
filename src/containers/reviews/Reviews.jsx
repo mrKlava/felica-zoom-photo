@@ -1,14 +1,21 @@
 import React from 'react'
 
-
 import { Review } from '../../components'
+
 import './reviews.css'
 
-function Reviews() {
+function Reviews( props ) {
+
+    let obj = props.data.review;
+
     return (
         <div className='reviews' id='reviews'>
             <div className="container">
-                <Review/>
+                {
+                    obj.map(function(review) {
+                        return <Review item={review} key={review.id} />
+                    })
+                }
             </div>
         </div>
     )

@@ -2,14 +2,14 @@ import React from 'react'
 
 import './title.css'
 
-function Title() {
+function Title(props) {
     return (
         <div className='title-container'>
             <div className="title-container_suptitle">
-                Suptitle
+                { props.item.suptitle }
             </div>
             <div className="title-container_title">
-                Long title
+                { props.item.title }
             </div>
         </div>
     )

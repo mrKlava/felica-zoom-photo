@@ -4,19 +4,19 @@ import reviewImg from '../../assets/images/reviews/pexels-bruno-salvadori-224538
 
 import './review.css'
 
-function Review() {
+function Review(props) {
     return (
         <div className='review'>
             <div className="review-content">
                 <div className="review-content_img">
-                    <img src={reviewImg} alt="" />
+                    <img src={ props.item.image } alt="" />
                 </div>
                 <div className="review-content_info">
                     <div className="review-content_info-text">
-                        “Lorem ipsum, dolor sit amet  adipisicing elit. Non libero voluptas sequi sunt recusandae dolore, debitis praesentium quis, officiis fugit quasi ipsum officia  earum!”
+                        { props.item.text }
                     </div>
                     <div className="review-content_info-name">
-                        Clara
+                        { props.item.name }
                     </div>
                 </div>
             </div>

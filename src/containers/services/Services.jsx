@@ -5,20 +5,27 @@ import { Service } from '../../components'
 
 import './services.css'
 
-function Services() {
+function Services(props) {
+
+    const obj = props.data.service
+
     return (
         <div className='services' id='services'>
             <div className="container">
                 <div className="services-content">
-                    <LargeTitle/>
+                    <LargeTitle item={ props.data }/>
                     <div className="services-content_text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio excepturi molestiae et ab sit ipsam in quidem quos!
+                        { props.data.text }
                     </div>
                     <div className="services-content_cards">
-                        <Service/>
-                        <Service/>
-                        <Service/>
-                        <Service/>
+
+                        {
+                            obj.map( function(service) {
+                                // console.log(service)
+                                return <Service item={service} key={service.id} />
+                            })
+                        }
+        
                     </div>
                 </div>
 
