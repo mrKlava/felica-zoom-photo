@@ -27,8 +27,11 @@
 
         &-text {
             font-family: @font-text;
+            color: @color-text-large;
             font-size: @text-lg;
             line-height: 2.5rem;
+
+            margin-bottom: 1rem;
         }
 
         &-name {
@@ -37,17 +40,17 @@
             justify-content: center;
 
             font-family: @font-title;
-            font-size: @title-sm;
-            color: @gold;
+            font-size: @text-lg;
+            color: @color-title;
 
           &::after,
           &::before {
             display: block;
             content: "";
-            height: 3px;
-            width: 35px;
+            height: 1px;
+            width: 30%;
             
-            background-color: @gold;
+            background-color: @color-title;
             margin: 0 2rem;
 
           }  

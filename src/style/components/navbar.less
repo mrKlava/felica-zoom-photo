@@ -3,8 +3,14 @@
 @import '../variables.less';
 
 .navbar {
-    background-color: @dark-green;
-    height: 50px;
+    background-color: @bg-nav-color;
+    height: 60px;
+    width: 100%;
+
+    position: fixed;
+    z-index: 100;
+    
+    box-shadow: 0 5px 20px @noir;
 
     &-links {
         display: flex;
@@ -12,11 +18,23 @@
         justify-content: space-between;
         align-items: center;
 
+        margin: 0.3rem 0;
+
         &_logo {
-            font-family: @font-title;
-            font-size: 32px;
             
             a {  
+                font-family: @font-navlink;
+                font-size: @text-lg;
+                color: @color-navlink;
+                font-family: @font-suptitle;
+                text-decoration: none;
+
+                &:hover {
+                    color: @color-navlink-hover;
+        
+                }
+
+
                 img {
                     display: none;
                 }
@@ -32,14 +50,14 @@
                 text-transform: capitalize;
                 text-decoration: none;
 
-                font-family: @font-title;
-                color: @gold;
+                font-family: @font-navlink;
+                color: @color-navlink;
                 font-size: @text-lg;
 
                 margin-left: 2rem;
 
                 &:hover {
-                    color: lighten(@gold, 20%);
+                    color: @color-navlink-hover;
                 }
 
                 transition: color .2s linear;

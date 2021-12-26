@@ -7,21 +7,21 @@
 
     &-content {
 
-        background-color: @dark-blue;
+        background-color: @bg-card-color;
         margin: 2rem;
-        box-shadow: 0 0 20px #404a42;
+        box-shadow: 0 0 20px @noir;
 
         &_img {
             position: relative;
 
             &-div {
-
                 width: 100%;
                 max-height: 360px;
 
+                transform: translate3d(25px, -25px, 0);
+
                 overflow: hidden;
 
-                transform: translate3d(25px, -25px, 0);
 
                 img {
                     display: block;
@@ -31,36 +31,35 @@
             }
 
             &-title {
-                font-size: 52px;
-                font-weight: 700;
-                color: @gold;
+                font-family: @font-title;
+                color: @color-title;
+                font-size: @title-lg;
+                font-weight: 900;
 
-                text-shadow: 0 -7px 30px #192231;
+                text-shadow: 0 -7px 20px #192231;
 
                 position: absolute;
 
                 bottom: 0;
                 left: 0;
 
-                transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 10px, 0);
             }
-            
         }
 
         &_info {
-            
             &-text {
                 padding: 1rem 2rem;
                 font-family: @font-text;
-                color: @marble;
+                color: @color-text;
                 font-size: @text-md;
                 line-height: 1.5rem;
 
                 text-align: center;
 
-                &.short {
-                    
-                }
+                // &.short {
+
+                // }
 
                 &.long {
                     display: none;

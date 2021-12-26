@@ -8,34 +8,34 @@
     text-align: center;
 
     &_suptitle {
-        transform: translateY(30px) rotate(-7deg);
-
         font-family: @font-suptitle;
-        color: @marble;
+        color: @color-suptitle;
         font-size: @title-sm;
         font-weight: 100;
+    
+        transform: translateY(30px) rotate(-7deg);
+
         z-index: 1;
     }
 
     &_title {
         font-family: @font-title;
-        color: @gold;
+        color: @color-title;
         font-size: @title-md;
-        font-weight: 700;
+        font-weight: 400;
+
         z-index: 10;
 
         &::after {
             display: block;
             content: "";
 
-            
             margin: 1rem auto;
             
-
             width: 80%;
             height: 1px;
 
-            background-color: @gold;
+            background-color: @color-title;
         }
     }
 

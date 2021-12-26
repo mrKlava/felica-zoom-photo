@@ -6,6 +6,27 @@
   src: url(https://fonts.gstatic.com/s/mrdafoe/v9/lJwE-pIzkS5NXuMMrGiq.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v25/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v25/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v25/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsukDQ.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Scheherazade New';
   font-style: normal;
   font-weight: 400;
@@ -19,13 +40,20 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/scheherazadenew/v8/4UaerFhTvxVnHDvUkUiHg8jprP4DM79DHlY.ttf) format('truetype');
 }
+/*
+    
+font-family: 'Mr Dafoe', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Scheherazade New', serif;
+
+*/
 .service {
   width: 50%;
 }
 .service-content {
   background-color: #192231;
   margin: 2rem;
-  box-shadow: 0 0 20px #404a42;
+  box-shadow: 0 0 20px #000;
 }
 .service-content_img {
   position: relative;
@@ -33,8 +61,8 @@
 .service-content_img-div {
   width: 100%;
   max-height: 360px;
-  overflow: hidden;
   transform: translate3d(25px, -25px, 0);
+  overflow: hidden;
 }
 .service-content_img-div img {
   display: block;
@@ -42,14 +70,15 @@
   height: auto;
 }
 .service-content_img-title {
-  font-size: 52px;
-  font-weight: 700;
+  font-family: 'Playfair Display', serif;
   color: #c0b283;
-  text-shadow: 0 -7px 30px #192231;
+  font-size: 72px;
+  font-weight: 900;
+  text-shadow: 0 -7px 20px #192231;
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 10px, 0);
 }
 .service-content_info-text {
   padding: 1rem 2rem;

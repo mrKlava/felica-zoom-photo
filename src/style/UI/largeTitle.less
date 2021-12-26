@@ -8,20 +8,22 @@
     text-align: center;
 
     &_suptitle {
-        transform: translateY(35px) rotate(-7deg);
-
-        font-family: @font-suptitle;
-        color: @gold;
+        font-family: @font-suptitle-large;
+        color: @color-suptitle-large;
         font-size: @title-md;
         font-weight: 100;
+
+        transform: translateY(35px) rotate(-7deg);
+
         z-index: 1;
     }
 
     &_title {
-        font-family: @font-title;
-        color: @noir;
+        font-family: @font-title-large;
+        color: @color-title-large;
         font-size: @title-lg;
         font-weight: 700;
+
         z-index: 10;
 
         &::after {
@@ -32,7 +34,7 @@
             width: 100px;
             height: 3px;
 
-            background-color: @noir;
+            background-color: @color-title-large;
         }
     }
 }
