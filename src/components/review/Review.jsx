@@ -1,7 +1,5 @@
 import React from 'react'
 
-import reviewImg from '../../assets/images/reviews/pexels-bruno-salvadori-2245383.jpg'
-
 import './review.css'
 
 function Review(props) {

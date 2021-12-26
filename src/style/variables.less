@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Playfair+Display:wght@400;700;900&family=Scheherazade+New:wght@400;700&display=swap');
+
 // COLOR -----------------------------------------------------
 @noir: #000;
 @dark-blue: #192231;
@@ -6,25 +8,59 @@
 @light-pink: #eedbcd;
 @marble: #f4f4f4;
 
+     // BG
+@bg-body-color: @marble;
+@bg-nav-color: @dark-blue;
+@bg-card-card: @dark-blue;
+@bg-review-color: @light-pink;
+@bg-footer-color: @dark-blue;
+
+    // Font
+        // Large
+@color-suptitle-large: @gold;
+@color-title-large: @noir;
+@color-text-large: @noir;
+        // Regular
+@color-title: @gold;
+@color-suptitle: @marble;
+@color-text: @marble;
+        // Other
+@color-navlink: @gold;
+@color-navlink-hover: lighten(@gold, 20%);
+
+
 // TEXT ----------------------------------------------------
-@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Scheherazade+New:wght@400;700&display=swap');
+/*
+    
+font-family: 'Mr Dafoe', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Scheherazade New', serif;
 
+*/
+
+    // Familys
 @font-fancy: 'Mr Dafoe', cursive;
-
+@font-first: 'Playfair Display', serif;
+@font-second: 'Scheherazade New', serif;
+        // Large
+@font-suptitle-large: @font-fancy;
+@font-title-large: @font-first;
+@font-text-large: @font-second;
+        // Regular
 @font-suptitle: @font-fancy;
-@font-title: 'Montserrat',sans-serif;
-// @font-subtitle: ;
+@font-title: @font-first;
+@font-text: @font-second;
+        // Other
+@font-navlink: @font-first;
+@font-link: @font-second;
 
-@font-text: 'Scheherazade New', serif;
-
-// Titles
-
+    // Size
+        // Titles
 @title-lg: 72px;
 @title-md: 52px;
 @title-sm: 48px;
-
-// Text
-
+        // Text
 @text-lg: 32px;
 @text-md: 18px;
 @text-sm: 12px;
+        

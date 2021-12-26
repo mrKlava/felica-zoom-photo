@@ -23,7 +23,7 @@ function Services(props) {
                             obj.map( function(service) {
                                 // console.log(service)
                                 return <Service item={service} key={service.id} />
-                            })
+                            })   
                         }
         
                     </div>

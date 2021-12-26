@@ -32,11 +32,14 @@
 }
 .service-content_img-div {
   width: 100%;
+  max-height: 360px;
+  overflow: hidden;
+  transform: translate3d(25px, -25px, 0);
 }
 .service-content_img-div img {
   display: block;
   max-width: 100%;
-  transform: translate3d(25px, -25px, 0);
+  height: auto;
 }
 .service-content_img-title {
   font-size: 52px;

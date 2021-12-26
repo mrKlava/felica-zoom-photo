@@ -11,20 +11,22 @@
         margin: 2rem;
         box-shadow: 0 0 20px #404a42;
 
-
         &_img {
             position: relative;
 
-            
             &-div {
 
                 width: 100%;
+                max-height: 360px;
+
+                overflow: hidden;
+
+                transform: translate3d(25px, -25px, 0);
 
                 img {
                     display: block;
                     max-width: 100%;
-
-                    transform: translate3d(25px, -25px, 0);
+                    height: auto;
                 }
             }
 

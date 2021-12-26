@@ -6,6 +6,27 @@
   src: url(https://fonts.gstatic.com/s/mrdafoe/v9/lJwE-pIzkS5NXuMMrGiq.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v25/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v25/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v25/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfsukDQ.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Scheherazade New';
   font-style: normal;
   font-weight: 400;
@@ -19,3 +40,10 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/scheherazadenew/v8/4UaerFhTvxVnHDvUkUiHg8jprP4DM79DHlY.ttf) format('truetype');
 }
+/*
+    
+font-family: 'Mr Dafoe', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Scheherazade New', serif;
+
+*/
