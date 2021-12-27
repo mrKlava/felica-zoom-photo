@@ -5,6 +5,10 @@
 .service {
     width: 50%;
 
+    @media (max-width: @screen-sm-min) {
+        width: 100%;
+    }
+
     &-content {
 
         background-color: @bg-card-color;
@@ -33,7 +37,7 @@
             &-title {
                 font-family: @font-title;
                 color: @color-title;
-                font-size: @title-lg;
+                font-size: @title-md;
                 font-weight: 900;
 
                 text-shadow: 0 -7px 20px #192231;
@@ -48,6 +52,8 @@
         }
 
         &_info {
+            padding-bottom: 1rem;
+
             &-text {
                 padding: 1rem 2rem;
                 font-family: @font-text;

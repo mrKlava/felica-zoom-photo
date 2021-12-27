@@ -1,8 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import './service.css'
 
 function Service(props) {
+
+    const [isActive, setActive] = useState('false')
+
+    const handleToggle = () => {
+        setActive(!isActive)
+    }
+
     return (
         <div className='service'>
                 <div className="service-content">
@@ -18,10 +25,13 @@ function Service(props) {
                             <div className="service-content_info-text short">
                                 { props.item.text.short }
                             </div>
-                            <div className="service-content_info-more active">
+                            <div className={ isActive ? 'service-content_info-more' : 'service-content_info-more  active' }
+                            // <div className="service-content_info-more active"
+                                onClick={ handleToggle }
+                            >
                                 MORE
                             </div>
-                            <div className="service-content_info-text long active">
+                            <div className={ isActive ? 'service-content_info-text long' : 'service-content_info-text long  active'} >
                                 { props.item.text.long }
                             </div>
                         </div>
