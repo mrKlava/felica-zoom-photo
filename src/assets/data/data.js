@@ -9,21 +9,25 @@ export const data = {
                 id: 1,
                 text: 'about',
                 link: '#about',
+                offset: { mob: '60', desk: '120' },
             },
             {
                 id: 2,
                 text: 'services',
                 link: '#services',
+                offset: { mob: '60', desk: '60' },
             },
             {
                 id: 3,
                 text: 'reviews',
                 link: '#reviews',
+                offset: { mob: '200', desk: '200' },
             },
             {
                 id: 4,
                 text: 'contacts',
                 link: '#contacts',
+                offset: { mob: '1', desk: '1' },
             },
         ]
     },

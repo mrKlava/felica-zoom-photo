@@ -55,6 +55,10 @@ function Navbar(props) {
                     </div>
                 </div>
             </div>
+
+            {
+                console.log( window.innerWidth )
+            }
         </div>
     )
 }
