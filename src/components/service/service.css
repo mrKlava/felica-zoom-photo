@@ -60,6 +60,11 @@ font-family:            'Scheherazade New', serif;
   margin: 2rem;
   box-shadow: 0 0 20px #000;
 }
+@media (max-width: 768px) {
+  .service-content {
+    margin: 3rem;
+  }
+}
 .service-content_img {
   position: relative;
 }
@@ -85,6 +90,12 @@ font-family:            'Scheherazade New', serif;
   left: 0;
   transform: translate3d(0, 10px, 0);
 }
+@media (max-width: 480px) {
+  .service-content_img-title {
+    font-size: 48px;
+    transform: translate3d(0, 0, 0);
+  }
+}
 .service-content_info {
   padding-bottom: 1rem;
 }
@@ -93,12 +104,23 @@ font-family:            'Scheherazade New', serif;
   font-family: 'Scheherazade New', serif;
   color: #f4f4f4;
   font-size: 21px;
-  line-height: 1.5rem;
+  line-height: 2rem;
   text-align: center;
+}
+@media (max-width: 480px) {
+  .service-content_info-text {
+    font-size: 18px;
+    line-height: 1.5rem;
+  }
 }
 .service-content_info-text.long {
   display: none;
   padding-bottom: 2rem;
+}
+@media (max-width: 480px) {
+  .service-content_info-text.long {
+    padding-bottom: 1rem;
+  }
 }
 .service-content_info-text.long.active {
   display: block;

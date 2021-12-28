@@ -15,6 +15,10 @@
         margin: 2rem;
         box-shadow: 0 0 20px @noir;
 
+        @media (max-width: @screen-sm-min) {
+            margin: 3rem;
+        }
+
         &_img {
             position: relative;
 
@@ -48,6 +52,11 @@
                 left: 0;
 
                 transform: translate3d(0, 10px, 0);
+
+                @media (max-width: @screen-xs-min) {
+                    font-size: @title-xs;
+                    transform: translate3d(0, 0, 0);
+                }
             }
         }
 
@@ -58,8 +67,8 @@
                 padding: 1rem 2rem;
                 font-family: @font-text;
                 color: @color-text;
-                font-size: @text-md;
-                line-height: 1.5rem;
+                font-size: @text-sm;
+                line-height: 2rem;
 
                 text-align: center;
 
@@ -67,9 +76,19 @@
 
                 // }
 
+                
+                @media (max-width: @screen-xs-min) {
+                    font-size: @text-xs;
+                    line-height: 1.5rem;
+                }
+
                 &.long {
                     display: none;
                     padding-bottom: 2rem;
+
+                    @media (max-width: @screen-xs-min) {
+                        padding-bottom: 1rem;
+                    }
 
                     &.active {
                         display: block;
