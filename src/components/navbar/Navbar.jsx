@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
 import { Link } from '../../UI'
@@ -37,28 +37,24 @@ function Navbar(props) {
                             : <RiMenu3Line onClick={ () => setToggleMenu(true) } />
                         }
                         {
-                            toggleMenu && (
-                                <div className="navbar-links_menu_container">
-
-                                    {
-                                        obj.map(function(link) {
-                                            return <Link item={ link } key={ link.id } />
-                                        })
-                                    }
-
-                                    <div className="navbar-links_menu_container-langbar">
-                                        EN
-                                    </div>
+                            <div className={ 
+                                        !toggleMenu 
+                                        ? "navbar-links_menu_container" 
+                                        :"navbar-links_menu_container active" } 
+                                    onClick={ () =>setToggleMenu(false) }>
+                                {
+                                    obj.map(function(link) {
+                                        return <Link item={ link } key={ link.id } />
+                                    })
+                                }
+                                <div className="navbar-links_menu_container-langbar">
+                                    EN
                                 </div>
-                            )
+                            </div>
                         }
                     </div>
                 </div>
             </div>
-
-            {
-                console.log( window.innerWidth )
-            }
         </div>
     )
 }

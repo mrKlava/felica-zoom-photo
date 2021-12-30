@@ -3,7 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function Link(props) {
     
-    let [offset, setOffset] = useState('');
+    const [offset, setOffset] = useState('');
     
     useEffect( () => {
         updateDimensions()
@@ -24,15 +24,10 @@ function Link(props) {
             setOffset(props.item.offset.desk)
         }
     }
-    
+
     return (
-        <AnchorLink 
-            offset={ offset }
-            href={ props.item.link } 
-            >
-                        
+        <AnchorLink  offset={ offset } href={ props.item.link } >    
             { props.item.text }
-            
         </AnchorLink>
     )
 }
