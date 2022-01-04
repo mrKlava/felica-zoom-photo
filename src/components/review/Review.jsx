@@ -18,7 +18,6 @@ function Review(props) {
                     </div>
                 </div>
             </div>
-            
         </div>
     )
 }

@@ -98,18 +98,18 @@ export const data = {
                 text: 'Lorem ipsum dolor sitamet, consecteturadipiscing elit, sed doeiusmod tempor incididuntut labore et dolore magnaaliqua. Ut enim ad minimveniam, quis nostrudexercitation!',
                 name: 'Clara',
             },
-            // {
-            //     id:2,
-            //     image: reviewTwo,
-            //     text: 'Rem eaque quibusdam nemo natus aperiam voluptatem nam a earum! Animi quis voluptate aliquam facere maiores, provident, officia laudantium esse vero laboriosam sed tempore.',
-            //     name: 'Bill Clif',
-            // },
-            // {
-            //     id:3,
-            //     image: reviewThree,
-            //     text: 'Necessitatibus dolores impedit esse sequi explicabo nulla repellendus maxime est voluptatum blanditiis, dolorem in reprehenderit alias quam. Illo ut sit eveniet! Quod, nihil mollitia illo nisi fugiat placeat at fuga illum delectus quaerat commodi minus ad amet excepturi accusamus!',
-            //     name: 'Sarah M.',
-            // },
+            {
+                id:2,
+                image: reviewTwo,
+                text: 'Rem eaque quibusdam nemo natus aperiam voluptatem nam a earum! Animi quis voluptate aliquam facere maiores, provident, officia laudantium esse vero laboriosam sed tempore.',
+                name: 'Bill Clif',
+            },
+            {
+                id:3,
+                image: reviewThree,
+                text: 'Necessitatibus dolores impedit esse sequi explicabo nulla repellendus maxime est voluptatum blanditiis, dolorem in reprehenderit alias quam. Illo ut sit eveniet! Quod, nihil mollitia illo nisi fugiat placeat at fuga illum delectus quaerat commodi minus ad amet excepturi accusamus!',
+                name: 'Sarah M.',
+            },
         ]
     },
     contacts: {

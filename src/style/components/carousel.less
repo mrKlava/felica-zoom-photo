@@ -1,0 +1,65 @@
+//out: ../../containers/reviews/carousel.css, compress: false
+
+@import '../variables.less';
+
+
+	// disiable status bar ------------------------------
+.carousel-status {
+	display: none;
+}
+
+	// btns prev next  -----------------------------------
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+	width: 2em;
+}
+
+	// arrow 
+.carousel .control-arrow:before,
+.carousel.carousel-slider .control-arrow:before {
+	display: inline-block;
+  	content: '';
+
+	width: 15px;
+  	height: 15px;
+
+	border: none;
+	transform: rotate(-135deg);
+
+}
+
+	// prev
+.carousel .control-prev.control-arrow:before {
+	border-right: 3px solid @bg-card-color;
+	border-top: 3px solid @bg-card-color;
+}
+
+	// next
+.carousel .control-next.control-arrow:before {
+	border-left: 3px solid @bg-card-color;
+	border-bottom: 3px solid @bg-card-color;
+}
+
+	// hover on button
+.carousel.carousel-slider .control-arrow:hover {
+	background: @color-navlink;
+}
+
+	// hover on arrow
+.carousel .control-arrow:focus,
+.carousel .control-arrow:hover {
+  opacity: .5;
+}
+
+// dots ----------------------------------------------------
+.carousel .control-dots .dot {
+	background: @color-navlink;
+}
+
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+	width: 9px;
+	height: 9px;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
