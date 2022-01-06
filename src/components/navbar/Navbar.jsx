@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
-import { Link } from '../../UI'
+import { Link, LangBar } from '../../UI'
 
 import './navbar.css'
 
@@ -26,9 +26,7 @@ function Navbar(props) {
                                 return <Link item={ link } key={ link.id } />
                             })
                         }
-                        <div className="navbar-links_container-langbar">
-                            EN
-                        </div>
+                        <LangBar />
                     </div>
                     <div className="navbar-links_menu">
                         {
@@ -47,9 +45,7 @@ function Navbar(props) {
                                         return <Link item={ link } key={ link.id } />
                                     })
                                 }
-                                <div className="navbar-links_menu_container-langbar">
-                                    EN
-                                </div>
+                                <LangBar/>
                             </div>
                         }
                     </div>
