@@ -26,7 +26,7 @@ function Navbar(props) {
                                 return <Link item={ link } key={ link.id } />
                             })
                         }
-                        <LangBar />
+                        <LangBar data={props.data.lang} />
                     </div>
                     <div className="navbar-links_menu">
                         {
@@ -45,7 +45,7 @@ function Navbar(props) {
                                         return <Link item={ link } key={ link.id } />
                                     })
                                 }
-                                <LangBar/>
+                                <LangBar data={props.data.lang} />
                             </div>
                         }
                     </div>

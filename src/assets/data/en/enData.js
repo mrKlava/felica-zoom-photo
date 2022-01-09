@@ -1,7 +1,19 @@
-import { aboutImg, serviceWeding, serviceHen, serviceLove, serviceIndividul, reviewOne, reviewTwo, reviewThree, contacts } from '../images'
+import { aboutImg, serviceWeding, serviceHen, serviceLove, serviceIndividul, reviewOne, reviewTwo, reviewThree, contacts } from '../../images'
 
-export const data = {
+// ENGLISH
+
+export const enData = {
     navbar: {
+        lang: {
+            en: {
+                short: 'en',
+                long: 'English',
+            },
+            fr: {
+                short: 'fr',
+                long: 'Français'
+            },
+        },
         logo: 'FelicaZoom',
         link: '#header',
         links: [

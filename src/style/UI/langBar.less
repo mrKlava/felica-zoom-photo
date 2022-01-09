@@ -1,4 +1,4 @@
-//out: ../../UI/langBar/langBar.css, compress: true
+//out: ../../UI/langBar/langBar.css, compress: false
 
 @import '../variables.less';
 
@@ -6,6 +6,19 @@
     color: @color-navlink;
 
     margin-left: 1.5rem;
+
+    ul {
+        margin: 0;
+        list-style: none;
+
+        li {
+            margin-bottom: .5rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 // .langbar {
