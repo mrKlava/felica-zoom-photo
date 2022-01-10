@@ -4,7 +4,7 @@ import './service.css'
 
 function Service(props) {
 
-    const [isActive, setActive] = useState('false')
+    const [isActive, setActive] = useState('fasle')
 
     const handleToggle = () => {
         setActive(!isActive)

@@ -6,6 +6,12 @@ Using Less for formatting (just compiled css files, without dependency or modify
 
 ## Installed dependency: 
 
+### For reviews section localisation used:
+
+        npm install i18next react-i18next i18next-browser-languagedetector
+
+        https://github.com/i18next/react-i18next
+
 ### For navbar links scroll and offset of anchor links:
 
         npm install react-anchor-link-smooth-scroll

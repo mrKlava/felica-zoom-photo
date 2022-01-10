@@ -2,28 +2,93 @@
 
 @import '../variables.less';
 
+
+
 .langbar {
+    position: relative;
+
     color: @color-navlink;
+    text-transform: uppercase;
 
     margin-left: 1.5rem;
 
-    ul {
-        margin: 0;
-        list-style: none;
+    @media (max-width: @screen-sm-min) {
+        // align-self: center;
+        margin: 0 2rem;
+        padding: 1rem 0;
+    }
 
-        li {
-            margin-bottom: .5rem;
-
-            &:hover {
-                cursor: pointer;
-            }
+    &-current {
+        font-size: @text-md;
+    
+        @media (max-width: @screen-sm-min) {
+            display: none;
+        }
+        
+        svg {
+            display: block;
+            width: @text-sm;
+            height: @text-sm;
         }
     }
+
+    &-langs {
+        position: absolute;
+        top: 0;
+
+        background-color: @bg-nav-color;
+
+        display: none;
+
+        @media (max-width: @screen-sm-min) {
+            position: static;
+            display: block;
+            background-color: transparent;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            @media (max-width: @screen-sm-min) {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            li {
+                margin-bottom: .5rem;
+
+                transition: color .2s linear;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    color: @color-navlink-hover;
+                }
+            }
+        }
+
+        &.active {
+            display: block;
+            width: 100%;
+
+            opacity: 0;
+    
+
+            transition: opacity .3s linear;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    } 
+    
 }
 
-// .langbar {
-//     color: @color-navlink;
-//     font-size: @text-md;
+@media (max-width: @screen-sm-min) {
 
-//     margin: 1rem 2rem 2rem;
-// }
+}

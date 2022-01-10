@@ -3,7 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 function Link(props) {
     
-    const [offset, setOffset] = useState('');
+    const [offset, setOffset] = useState('')
     
     useEffect( () => {
         updateDimensions()
@@ -12,7 +12,7 @@ function Link(props) {
     })
     
     const updateDimensions = () => {
-        const width = window.innerWidth;
+        const width = window.innerWidth
         checkWidth(width)
     };
     

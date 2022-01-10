@@ -4,16 +4,19 @@ import { aboutImg, serviceWeding, serviceHen, serviceLove, serviceIndividul, rev
 
 export const enData = {
     navbar: {
-        lang: {
-            en: {
+        lang: [
+            {
+                id: 0,
                 short: 'en',
                 long: 'English',
+                active: true,
             },
-            fr: {
+            {
+                id: 1,
                 short: 'fr',
                 long: 'Français'
             },
-        },
+        ],
         logo: 'FelicaZoom',
         link: '#header',
         links: [
@@ -65,7 +68,7 @@ export const enData = {
             {
                 id: 1,
                 image: serviceWeding,
-                title: 'Weding',
+                title: 'Wedding',
                 text: {
                     short: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non libero voluptas sequi sunt recusandae dolore, debitis praesentium quis, officiis fugit quasi ipsum officia natus earum dignissimos a nam ab molestias.',
                     long: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, doloribus nobis aliquam totam sed, id labore, quibusdam eveniet expedita tempora quas eum enim. Eaque dolor quam adipisci officia itaque autem ullam tenetur placeat laudantium ex repellendus, blanditiis ad harum esse corporis recusandae nulla fugiat nisi a ipsum praesentium eligendi velit! Expedita laborum assumenda magnam ipsum facilis sint repellat inventore harum fugiat voluptas modi magni pariatur aliquam minima vitae, repellendus voluptatem quasi doloribus? Voluptatem maxime fugit blanditiis, veniam quis dignissimos ea! Repellat totam esse ad voluptate quaerat odit laudantium provident inventore quae hic perspiciatis repellendus, reprehenderit labore, officia voluptatibus. Ab, eum.',

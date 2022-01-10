@@ -48,16 +48,71 @@ font-family:            'Scheherazade New', serif;
 
 */
 .langbar {
+  position: relative;
   color: #c0b283;
+  text-transform: uppercase;
   margin-left: 1.5rem;
 }
-.langbar ul {
+@media (max-width: 768px) {
+  .langbar {
+    margin: 0 2rem;
+    padding: 1rem 0;
+  }
+}
+.langbar-current {
+  font-size: 24px;
+}
+@media (max-width: 768px) {
+  .langbar-current {
+    display: none;
+  }
+}
+.langbar-current svg {
+  display: block;
+  width: 21px;
+  height: 21px;
+}
+.langbar-langs {
+  position: absolute;
+  top: 0;
+  background-color: #192231;
+  display: none;
+}
+@media (max-width: 768px) {
+  .langbar-langs {
+    position: static;
+    display: block;
+    background-color: transparent;
+  }
+}
+.langbar-langs ul {
   margin: 0;
+  padding: 0;
   list-style: none;
 }
-.langbar ul li {
-  margin-bottom: 0.5rem;
+@media (max-width: 768px) {
+  .langbar-langs ul {
+    display: flex;
+    justify-content: space-around;
+  }
 }
-.langbar ul li:hover {
+.langbar-langs ul li {
+  margin-bottom: 0.5rem;
+  transition: color 0.2s linear;
+}
+.langbar-langs ul li:last-child {
+  margin-bottom: 0;
+}
+.langbar-langs ul li:hover {
   cursor: pointer;
+  color: #e2dcc7;
+}
+.langbar-langs.active {
+  display: block;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+.langbar-langs.active:hover {
+  opacity: 1;
 }
