@@ -134,6 +134,6 @@ export const enData = {
         title: 'Contact me',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus voluptatibus molestiae voluptas neque eaque repudiandae dolorum, fuga tenetur vitae rerum corrupti provident aperiam maiores quae! Omnis repudiandae nostrum voluptate at.',
         email: 'felicaphoto@email.com',
-        instagram: 'instagram logo',
+        instagram: 'https://www.instagram.com/felicazoom_photography/',
     },
 }

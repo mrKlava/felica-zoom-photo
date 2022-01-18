@@ -45,7 +45,7 @@
                 font-size: @text-md;
                 line-height: 2.5rem;
 
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
 
                 @media (max-width: @screen-md-min) {
                     font-size: @text-sm;
@@ -66,7 +66,69 @@
                 @media (max-width: @screen-xs-min) {
                     font-size: @text-md;
                 }
+
+                .email {
+                    position: relative;
+                    opacity: 1;
+                    
+
+                    &-copy {
+                        font-family: @font-fancy;
+                        color: @gold;
+
+                        position: absolute;
+                        opacity: 0;
+
+                        top: 0;
+                        left: 45%;
+
+                        transform: rotate(-7deg);
+
+                        transition: opacity .2s linear, 
+                                    left .3s linear,
+                                    top .2s linear;
+
+                        @media (max-width: @screen-sm-min) {
+                            top: -30px;
+                            left: 40%;
+                            opacity: 1;
+                        }
+            
+                        @media (max-width: @screen-xs-min) {
+                            left: 30%;
+                        }
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+
+                        & .email-copy {
+                            top: -30px;
+                            left: 40%;
+                            opacity: 1;
+                
+                            @media (max-width: @screen-xs-min) {
+                                left: 30%;
+                            }
+                        }
+                    }
+                }
             }
+
+            &-social {
+                svg {
+                    width: @text-lg;
+                    height: @text-lg;
+                    color: @color-navlink;
+
+                    transition: color .2s linear;
+
+                    &:hover {
+                        color: @color-navlink-hover;
+                    }
+                }
+            }
+
         }
     }
 }

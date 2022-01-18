@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Title } from '../../UI'
+import { Title, Email, SocialLink } from '../../UI'
 
 import './footer.css'
 
@@ -18,11 +18,9 @@ function Footer(props) {
                         <div className="contacts-content_info-text">
                             { props.data.text }
                         </div>
-                        <div className="contacts-content_info-email">
-                            { props.data.email }
-                        </div>
+                        <Email email={ props.data.email} />
                         <div className="contacts-content_info-social">
-                            { props.data.instagram }
+                            <SocialLink link={props.data.instagram} />
                         </div>
                     </div>
                 </div>
