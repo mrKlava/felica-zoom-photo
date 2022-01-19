@@ -1,6 +1,4 @@
-//out: ../../containers/reviews/carousel.css, compress: false
-
-@import '../variables.less';
+@use '../../style/variables' as *;
 
 
 	// disiable status bar ------------------------------
@@ -30,19 +28,19 @@
 
 	// prev
 .carousel .control-prev.control-arrow:before {
-	border-right: 3px solid @bg-card-color;
-	border-top: 3px solid @bg-card-color;
+	border-right: 3px solid $bg-card-color;
+	border-top: 3px solid $bg-card-color;
 }
 
 	// next
 .carousel .control-next.control-arrow:before {
-	border-left: 3px solid @bg-card-color;
-	border-bottom: 3px solid @bg-card-color;
+	border-left: 3px solid $bg-card-color;
+	border-bottom: 3px solid $bg-card-color;
 }
 
 	// hover on button
 .carousel.carousel-slider .control-arrow:hover {
-	background: @color-navlink;
+	background: $color-navlink;
 }
 
 	// hover on arrow
@@ -53,7 +51,7 @@
 
 // dots ----------------------------------------------------
 .carousel .control-dots .dot {
-	background: @color-navlink;
+	background: $color-navlink;
 }
 
 .carousel .control-dots .dot.selected,

@@ -3,7 +3,7 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 
 import { Link, LangBar } from '../../UI'
 
-import './navbar.css'
+import './navbar.scss'
 
 function Navbar(props) {
     const obj = props.data.links

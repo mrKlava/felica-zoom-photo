@@ -1,0 +1,46 @@
+@use '../../style/variables' as *;
+
+.large__title-container {
+    margin-bottom: 1rem;
+
+    text-align: center;
+
+    &_suptitle {
+        font-family: $font-suptitle-large;
+        color: $color-suptitle-large;
+        font-size: $title-sm;
+        font-weight: 100;
+
+        transform: translateY(35px) rotate(-7deg);
+
+        z-index: 1;
+
+        @media (max-width: $screen-sm-min) {
+            font-size: $title-xs;
+        }
+    }
+
+    &_title {
+        font-family: $font-title-large;
+        color: $color-title-large;
+        font-size: $title-md;
+        font-weight: 700;
+
+        z-index: 10;
+
+        @media (max-width: $screen-sm-min) {
+            font-size: $title-sm;
+        }
+
+        &::after {
+            margin: 1rem auto;
+            display: block;
+            content: "";
+
+            width: 100px;
+            height: 3px;
+
+            background-color: $color-title-large;
+        }
+    }
+}

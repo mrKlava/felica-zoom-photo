@@ -1,11 +1,10 @@
 import React from "react";
 import { useTranslation, Trans } from 'react-i18next';
 
-
 import { Header, About, Services, Reviews, Footer } from './containers'
 import { Navbar } from './components'
 
-import './App.css'
+import './App.scss'
 
 function App() {
 

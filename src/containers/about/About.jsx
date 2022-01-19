@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Title } from '../../UI'
 
-import './about.css'
+import './about.scss'
 
 function About(props) {
     return (

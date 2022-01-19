@@ -1,6 +1,4 @@
-//out: ../../containers/header/header.css, compress: true
-
-@import '../variables.less';
+@use '../../style/variables' as *;
 
 .header {
     height: 100vh;
@@ -19,29 +17,29 @@
 
         text-align: justify;
 
-        @media (max-width: @screen-sm-min) {
+        @media (max-width: $screen-sm-min) {
             position: static;
 
             margin: 0 auto;
             padding: 10rem 2rem 0;
         }
 
-        @media (max-width: @screen-xs-min) {
+        @media (max-width: $screen-xs-min) {
             padding-top: 10rem;
         }
 
         &_text {
-            font-family: @font-text-large;
-            color: @color-text-large;
-            font-size: @text-lg;
+            font-family: $font-text-large;
+            color: $color-text-large;
+            font-size: $text-lg;
             line-height: 2.5rem;  
             
-            @media (max-width: @screen-sm-min) {
+            @media (max-width: $screen-sm-min) {
                 
             }
 
-            @media (max-width: @screen-xs-min) {
-                font-size: @text-md;
+            @media (max-width: $screen-xs-min) {
+                font-size: $text-md;
                 line-height: 2rem;
             }
 

@@ -1,21 +1,19 @@
-//out: ../../components/service/service.css, compress: false
-
-@import '../variables.less';
+@use '../../style/variables' as *;
 
 .service {
     width: 50%;
 
-    @media (max-width: @screen-sm-min) {
+    @media (max-width: $screen-sm-min) {
         width: 100%;
     }
 
     &-content {
 
-        background-color: @bg-card-color;
+        background-color: $bg-card-color;
         margin: 2rem;
-        box-shadow: 0 0 20px @noir;
+        box-shadow: 0 0 20px $noir;
 
-        @media (max-width: @screen-sm-min) {
+        @media (max-width: $screen-sm-min) {
             margin: 3rem;
         }
 
@@ -39,9 +37,9 @@
             }
 
             &-title {
-                font-family: @font-title;
-                color: @color-title;
-                font-size: @title-md;
+                font-family: $font-title;
+                color: $color-title;
+                font-size: $title-md;
                 font-weight: 900;
 
                 text-shadow: 0 -7px 20px #192231;
@@ -53,8 +51,8 @@
 
                 transform: translate3d(0, 10px, 0);
 
-                @media (max-width: @screen-xs-min) {
-                    font-size: @title-xs;
+                @media (max-width: $screen-xs-min) {
+                    font-size: $title-xs;
                     transform: translate3d(0, 0, 0);
                 }
             }
@@ -65,9 +63,9 @@
 
             &-text {
                 padding: 1rem 2rem;
-                font-family: @font-text;
-                color: @color-text;
-                font-size: @text-sm;
+                font-family: $font-text;
+                color: $color-text;
+                font-size: $text-sm;
                 line-height: 2rem;
 
                 text-align: center;
@@ -77,8 +75,8 @@
                 // }
 
                 
-                @media (max-width: @screen-xs-min) {
-                    font-size: @text-xs;
+                @media (max-width: $screen-xs-min) {
+                    font-size: $text-xs;
                     line-height: 1.5rem;
                 }
 
@@ -86,7 +84,7 @@
                     display: none;
                     padding-bottom: 2rem;
 
-                    @media (max-width: @screen-xs-min) {
+                    @media (max-width: $screen-xs-min) {
                         padding-bottom: 1rem;
                     }
 
@@ -103,8 +101,8 @@
                 width: 15px;
                 height: 15px;
 
-                border-bottom: 2px solid @color-navlink;
-                border-left: 2px solid @color-navlink;
+                border-bottom: 2px solid $color-navlink;
+                border-left: 2px solid $color-navlink;
 
                 transform: rotate(135deg);
 

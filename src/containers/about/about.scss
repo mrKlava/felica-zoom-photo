@@ -1,6 +1,4 @@
-//out: ../../containers/about/about.css, compress:true
-
-@import '../variables.less';
+@use '../../style/variables' as *;
 
 .about {
     margin-bottom: 7rem;
@@ -9,14 +7,14 @@
         display: flex;
         flex-direction: row;
 
-        @media (max-width: @screen-sm-min) {
+        @media (max-width: $screen-sm-min) {
             flex-direction: column-reverse;
         }
 
         &_item {
             width: 50%;
 
-            @media (max-width: @screen-sm-min) {
+            @media (max-width: $screen-sm-min) {
                 width: 100%;
             }
 
@@ -38,38 +36,38 @@
                 height: 100%;
                 padding-bottom: 2rem;
 
-                background-color: @bg-card-color;
+                background-color: $bg-card-color;
 
-                @media (max-width: @screen-md-min) {
+                @media (max-width: $screen-md-min) {
                     padding-bottom: 3rem;
                 }
 
-                @media (max-width: @screen-sm-min) {
+                @media (max-width: $screen-sm-min) {
                     transform: none;
 
                     padding: 2rem 2rem 4rem ;
                 }
 
-                @media (max-width: @screen-xs-min) {
+                @media (max-width: $screen-xs-min) {
                     padding: 1rem 0 3rem;
                 }
 
                 &-text {
-                    font-family: @font-text;
+                    font-family: $font-text;
                     line-height: 2.5rem;
-                    font-size: @text-md;
-                    color: @color-text;
+                    font-size: $text-md;
+                    color: $color-text;
 
                     text-align: justify;
 
                     margin: 0 4rem;
 
-                    @media (max-width: @screen-md-min) {
+                    @media (max-width: $screen-md-min) {
                         line-height: 2rem;
                     }
 
-                    @media (max-width: @screen-xs-min) {
-                        font-size: @text-xs;
+                    @media (max-width: $screen-xs-min) {
+                        font-size: $text-xs;
                     }
                 }
             }

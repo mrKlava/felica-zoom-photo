@@ -1,9 +1,7 @@
-//out: ../../containers/footer/footer.css, compress: true
-
-@import '../variables.less';
+@use '../../style/variables' as *;
 
 .contacts {
-    background-color: @bg-footer-color;
+    background-color: $bg-footer-color;
     
     &-content {
         display: flex;
@@ -11,7 +9,7 @@
 
         align-items: center;
 
-        @media (max-width: @screen-sm-min) {
+        @media (max-width: $screen-sm-min) {
             padding: 2rem 0;
         }
 
@@ -23,7 +21,7 @@
                 width: 100%;
             }
 
-            @media (max-width: @screen-sm-min) {
+            @media (max-width: $screen-sm-min) {
                 display: none;
             }
         }
@@ -32,39 +30,39 @@
             margin: 0 4rem;
             width: 100%;
 
-            color: @color-text;
+            color: $color-text;
             text-align: center;
 
 
-            @media (max-width: @screen-sm-min) {
+            @media (max-width: $screen-sm-min) {
                 margin: 0 2rem;
             }
 
             &-text {
-                font-family: @font-text;
-                font-size: @text-md;
+                font-family: $font-text;
+                font-size: $text-md;
                 line-height: 2.5rem;
 
                 margin-bottom: 2rem;
 
-                @media (max-width: @screen-md-min) {
-                    font-size: @text-sm;
+                @media (max-width: $screen-md-min) {
+                    font-size: $text-sm;
                     line-height: 2rem;
                 }
 
-                @media (max-width: @screen-xs-min) {
-                    font-size: @text-xs;
+                @media (max-width: $screen-xs-min) {
+                    font-size: $text-xs;
                 }
             }
 
             &-email {
-                font-family: @font-title;
-                font-size: @text-lg;
+                font-family: $font-title;
+                font-size: $text-lg;
 
                 margin-bottom: 1rem;
 
-                @media (max-width: @screen-xs-min) {
-                    font-size: @text-md;
+                @media (max-width: $screen-xs-min) {
+                    font-size: $text-md;
                 }
 
                 .email {
@@ -73,8 +71,8 @@
                     
 
                     &-copy {
-                        font-family: @font-fancy;
-                        color: @gold;
+                        font-family: $font-fancy;
+                        color: $gold;
 
                         position: absolute;
                         opacity: 0;
@@ -88,13 +86,13 @@
                                     left .3s linear,
                                     top .2s linear;
 
-                        @media (max-width: @screen-sm-min) {
+                        @media (max-width: $screen-sm-min) {
                             top: -30px;
                             left: 40%;
                             opacity: 1;
                         }
             
-                        @media (max-width: @screen-xs-min) {
+                        @media (max-width: $screen-xs-min) {
                             left: 30%;
                         }
                     }
@@ -107,7 +105,7 @@
                             left: 40%;
                             opacity: 1;
                 
-                            @media (max-width: @screen-xs-min) {
+                            @media (max-width: $screen-xs-min) {
                                 left: 30%;
                             }
                         }
@@ -117,14 +115,14 @@
 
             &-social {
                 svg {
-                    width: @text-lg;
-                    height: @text-lg;
-                    color: @color-navlink;
+                    width: $text-lg;
+                    height: $text-lg;
+                    color: $color-navlink;
 
                     transition: color .2s linear;
 
                     &:hover {
-                        color: @color-navlink-hover;
+                        color: $color-navlink-hover;
                     }
                 }
             }

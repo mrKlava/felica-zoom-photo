@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { useTranslation } from 'react-i18next'
 import { MdOutlineLanguage } from 'react-icons/md'
 
-import './langBar.css'
+import './langBar.scss'
 
 function LangBar(props) {
 

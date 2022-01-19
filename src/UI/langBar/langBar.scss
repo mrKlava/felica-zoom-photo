@@ -1,34 +1,32 @@
-//out: ../../UI/langBar/langBar.css, compress: false
-
-@import '../variables.less';
+@use '../../style/variables' as *;
 
 
 
 .langbar {
     position: relative;
 
-    color: @color-navlink;
+    color: $color-navlink;
     text-transform: uppercase;
 
     margin-left: 1.5rem;
 
-    @media (max-width: @screen-sm-min) {
+    @media (max-width: $screen-sm-min) {
         // align-self: center;
         margin: 0 2rem;
         padding: 1rem 0;
     }
 
     &-current {
-        font-size: @text-md;
+        font-size: $text-md;
     
-        @media (max-width: @screen-sm-min) {
+        @media (max-width: $screen-sm-min) {
             display: none;
         }
         
         svg {
             display: block;
-            width: @text-sm;
-            height: @text-sm;
+            width: $text-sm;
+            height: $text-sm;
         }
     }
 
@@ -36,11 +34,11 @@
         position: absolute;
         top: 0;
 
-        background-color: @bg-nav-color;
+        background-color: $bg-nav-color;
 
         display: none;
 
-        @media (max-width: @screen-sm-min) {
+        @media (max-width: $screen-sm-min) {
             position: static;
             display: block;
             background-color: transparent;
@@ -51,7 +49,7 @@
             padding: 0;
             list-style: none;
 
-            @media (max-width: @screen-sm-min) {
+            @media (max-width: $screen-sm-min) {
                 display: flex;
                 justify-content: space-around;
             }
@@ -67,7 +65,7 @@
 
                 &:hover {
                     cursor: pointer;
-                    color: @color-navlink-hover;
+                    color: $color-navlink-hover;
                 }
             }
         }
@@ -89,6 +87,6 @@
     
 }
 
-@media (max-width: @screen-sm-min) {
+@media (max-width: $screen-sm-min) {
 
 }

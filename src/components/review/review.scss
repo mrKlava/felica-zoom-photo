@@ -1,6 +1,4 @@
-//out: ../../components/review/review.css, compress: true
-
-@import '../variables.less';
+@use '../../style/variables' as *;
 
 .review-content {
     display: flex;
@@ -10,7 +8,7 @@
 
     align-items: center;
 
-    @media (max-width: @screen-sm-min) {
+    @media (max-width: $screen-sm-min) {
         flex-direction: column;
         align-items: center;
     
@@ -19,7 +17,7 @@
     &_img {
         width: 30%;
 
-        @media (max-width: @screen-sm-min) {
+        @media (max-width: $screen-sm-min) {
             margin-bottom: 2rem;
         }
         img {
@@ -36,27 +34,27 @@
 
         text-align: center;
 
-        @media (max-width: @screen-sm-min) {
+        @media (max-width: $screen-sm-min) {
             width: 100%;
             // display: flex;
             // flex-direction: column-reverse;
         }
         
         &-text {
-            font-family: @font-text;
-            color: @color-text-large;
-            font-size: @text-lg;
+            font-family: $font-text;
+            color: $color-text-large;
+            font-size: $text-lg;
             line-height: 2.5rem;
 
             margin-bottom: 1rem;
 
-            @media (max-width: @screen-md-min) {
-                font-size: @text-md;
+            @media (max-width: $screen-md-min) {
+                font-size: $text-md;
                 line-height: 2rem;
             }
 
-            @media (max-width: @screen-xs-min) {
-                font-size: @text-sm;
+            @media (max-width: $screen-xs-min) {
+                font-size: $text-sm;
                 line-height: 2rem;
             }
         }
@@ -66,12 +64,12 @@
             align-items: center;
             justify-content: center;
 
-            font-family: @font-title;
-            font-size: @text-lg;
-            color: @color-title;
+            font-family: $font-title;
+            font-size: $text-lg;
+            color: $color-title;
 
-            @media (max-width: @screen-md-min) {
-                font-size: @text-md;
+            @media (max-width: $screen-md-min) {
+                font-size: $text-md;
             }
 
           &::after,
@@ -81,7 +79,7 @@
             height: 1px;
             width: 30%;
             
-            background-color: @color-title;
+            background-color: $color-title;
             margin: 0 2rem;
 
           }  

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { LargeTitle } from '../../UI'
 
-import "./header.css"
+import "./header.scss"
 
 function Header(props) {
     return (

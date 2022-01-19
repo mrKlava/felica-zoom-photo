@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-import './service.css'
+import './service.scss'
 
 function Service(props) {
 

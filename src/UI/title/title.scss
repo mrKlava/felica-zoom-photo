@@ -1,6 +1,4 @@
-//out: ../../UI/title/title.css, compress: true
-
-@import '../variables.less';
+@use '../../style/variables' as *;
 
 .title-container {
     margin-bottom: 1rem;
@@ -8,9 +6,9 @@
     text-align: center;
 
     &_suptitle {
-        font-family: @font-suptitle;
-        color: @color-suptitle;
-        font-size: @title-xs;
+        font-family: $font-suptitle;
+        color: $color-suptitle;
+        font-size: $title-xs;
         font-weight: 100;
     
         transform: translateY(30px) rotate(-7deg);
@@ -19,9 +17,9 @@
     }
 
     &_title {
-        font-family: @font-title;
-        color: @color-title;
-        font-size: @title-sm;
+        font-family: $font-title;
+        color: $color-title;
+        font-size: $title-sm;
         font-weight: 400;
 
         z-index: 10;
@@ -35,7 +33,7 @@
             width: 80%;
             height: 1px;
 
-            background-color: @color-title;
+            background-color: $color-title;
         }
     }
 

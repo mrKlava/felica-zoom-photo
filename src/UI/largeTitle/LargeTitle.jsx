@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './largeTitle.css'
+import './largeTitle.scss'
 
 function LargeTitle(props) {
     return (

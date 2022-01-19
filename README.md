@@ -2,7 +2,9 @@
 
 This landing page is designed and created by me for a photographer.
 
-Using Less for formatting (just compiled css files, without dependency or modifying webpack config file).
+~~Using Less for formatting (just compiled css files, without dependency or modifying webpack config file).~~
+
+Have change CSS preprocessor from LESS to Sass (.scss).
 
 ## Installed dependency: 
 

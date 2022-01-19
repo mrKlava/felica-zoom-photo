@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './review.css'
+import './review.scss'
 
 function Review(props) {
     return (

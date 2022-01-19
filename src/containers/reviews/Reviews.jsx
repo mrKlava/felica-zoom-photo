@@ -5,8 +5,8 @@ import { Carousel } from 'react-responsive-carousel'
 import { Review } from '../../components'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "./carousel.css"
-import './reviews.css'
+import "./carousel.scss"
+import './reviews.scss'
 
 function Reviews( props ) {
 

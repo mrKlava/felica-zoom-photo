@@ -1,9 +1,7 @@
-// out: ../index.css, compress: true
-
-@import 'variables.less';
+@use './style/variables' as *;
 
 body {
-    background-color: @bg-body-color;
+    background-color: $bg-body-color;
     margin: 0 auto;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;

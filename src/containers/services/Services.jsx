@@ -3,7 +3,7 @@ import React from 'react'
 import { LargeTitle } from '../../UI'
 import { Service } from '../../components'
 
-import './services.css'
+import './services.scss'
 
 function Services(props) {
 

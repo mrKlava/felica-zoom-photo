@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Title, Email, SocialLink } from '../../UI'
 
-import './footer.css'
+import './footer.scss'
 
 function Footer(props) {
 
