@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/felica-zoom-photo/static/css/main.5a83ceb4.css",
+    "main.js": "/felica-zoom-photo/static/js/main.f3ad21ea.js",
+    "static/media/pexels-maksim-goncharenok-4883696.jpg": "/felica-zoom-photo/static/media/pexels-maksim-goncharenok-4883696.fdcfde2aaa3d6f743f50.jpg",
+    "static/media/pexels-yuliia-auer-5303405.jpg": "/felica-zoom-photo/static/media/pexels-yuliia-auer-5303405.2a99e8277f55e8a49c47.jpg",
+    "static/media/about.jpg": "/felica-zoom-photo/static/media/about.8cd5d6c94abafa5faab2.jpg",
+    "static/media/pexels-yan-krukov-6817648.jpg": "/felica-zoom-photo/static/media/pexels-yan-krukov-6817648.601d490d17a5a39607bc.jpg",
+    "static/media/pexels-daria-obymaha-1683989.jpg": "/felica-zoom-photo/static/media/pexels-daria-obymaha-1683989.b397877550a997e016d7.jpg",
+    "static/media/pexels-татьяна-танатова-3936894.jpg": "/felica-zoom-photo/static/media/pexels-татьяна-танатова-3936894.3bc8a57bc3dfc2e8c953.jpg",
+    "static/media/pexels-andrea-piacquadio-839011.jpg": "/felica-zoom-photo/static/media/pexels-andrea-piacquadio-839011.66bbc599a7e3ad8a2603.jpg",
+    "static/media/pexels-wilson-vitorino-2191611.jpg": "/felica-zoom-photo/static/media/pexels-wilson-vitorino-2191611.324b691ee1791ad73fa4.jpg",
+    "static/media/pexels-dimitri-kuliuk-1488312.jpg": "/felica-zoom-photo/static/media/pexels-dimitri-kuliuk-1488312.0932ccb0e66bbfdad723.jpg",
+    "static/media/pexels-bruno-salvadori-2245383.jpg": "/felica-zoom-photo/static/media/pexels-bruno-salvadori-2245383.069a69a39363a6e8a60a.jpg",
+    "index.html": "/felica-zoom-photo/index.html",
+    "main.5a83ceb4.css.map": "/felica-zoom-photo/static/css/main.5a83ceb4.css.map",
+    "main.f3ad21ea.js.map": "/felica-zoom-photo/static/js/main.f3ad21ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a83ceb4.css",
+    "static/js/main.f3ad21ea.js"
+  ]
+}
